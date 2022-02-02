@@ -4,10 +4,11 @@ name: Testing
     types:
       - opened
 jobs:
-  name: Test My workflow
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout working branch
-      uses: actions/checkout@v2
-    - name: Open the action file
-      uses: ./
+  Test-workflow: 
+    name: Test My workflow
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout working branch
+        uses: actions/checkout@v2
+      - name: Open the action file
+        uses: ./
