@@ -1,0 +1,27 @@
+name: "ssh and docker-compose action"
+description: "ssh into new servers to set up docker and docker compose and build and run new images"
+author: "Anyungu Wanyungu"
+
+inputs:
+  SSH_KEY:
+    description: "Optional SSH Key for ssh key users"
+    required: false
+  SSH_PASSPHRASE:
+    description: "Optional SSH Passphrase for ssh key users"
+    required: false
+  SSH_USERNAME:
+    description: "Optional SSH Password for ssh users"
+    required: false
+  SSH_PASSWORD:
+    description: "Optional SSH Password for ssh users"
+    required: false
+  SSH_HOST:
+    description: "The remote host"
+    required: true
+  SSH_PORT:
+    description: "The remote host port"
+    required: true
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
