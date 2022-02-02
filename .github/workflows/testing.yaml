@@ -1,9 +1,8 @@
 name: Testing
-
-on:
+"on":
   pull_request:
-    types: [opened]
-
+    types:
+      - opened
 jobs:
   name: Test My workflow
   runs-on: ubuntu-latest
