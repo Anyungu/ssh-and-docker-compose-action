@@ -1,0 +1,23 @@
+{
+  "name": "ssh-and-docker-compose-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/ssh.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anyungu/ssh-and-docker-compose-action.git"
+  },
+  "author": "Anyungu C.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anyungu/ssh-and-docker-compose-action/issues"
+  },
+  "homepage": "https://github.com/Anyungu/ssh-and-docker-compose-action#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.33.1"
+  }
+}
